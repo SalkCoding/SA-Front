@@ -15,17 +15,17 @@ class IntroTitle extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "AIIA",
+                "Weaver",
                 style: TextStyle(
                   color: AirColor.navy,
-                  fontSize: ratio.width * 500,
+                  fontSize: ratio.width * 370,
                   fontFamily: 'Audiowide',
                   fontWeight: FontWeight.w900,
                 ),
               ),
               SizedBox(width: 40,),
               GradientText(
-                "Artificial\nIntelligence\nIn Actions",
+                "Make\nDeveloper\nOne",
                 colors: [
                   Colors.blueGrey,
                   Colors.blueAccent.withOpacity(0.8),

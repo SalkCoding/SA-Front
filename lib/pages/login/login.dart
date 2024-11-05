@@ -54,7 +54,7 @@ class Login extends ConsumerWidget {
                           height: ratio.height * 20,
                         ),
                         Text(
-                          '가천대학교 AIIA 아이디로 로그인을 해주세요.',
+                          '회원가입 한 후 로그인 해주세요',
                           style: AirTextStyle.loginsub,
                         ),
                         SizedBox(

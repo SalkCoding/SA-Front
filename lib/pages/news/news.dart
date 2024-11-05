@@ -117,7 +117,7 @@ class _NewsState extends ConsumerState<News> {
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    BoxChat(title: 'News', img: ImgPath.newsIcon),
+                    BoxChat(title: 'Community', img: ImgPath.newsIcon),
                     SizedBox(height: 10,),
                     NewsSearchBar()
                   ],

@@ -120,13 +120,10 @@ class Contract {
 
 class Intro {
   static const String intro =
-      """AIIA는 가천대학교 글로벌 캠퍼스 교내 자율 동아리이자 교내 유일 IT 플랫폼 탐구·개발 동아리로, AI·소프트웨어 학부 인공지능 전공 재학생을 중심으로 2023년 1월 7일에 창설되었습니다. Artificial Intelligence In Actions의 약어인 AIIA는 프로젝트 성과를 위한 인공지능 모델 개발의 의지를 담고 있습니다.\n\n
-AIIA는 Google에서 개발한 하이브리드 웹 프레임워크인 Flutter와 서버 개발을 위한 Spring, AI 딥러닝 모델 개발을 위한 Pytorch를 주 언어로 채택하여 Android, iOS 등의 모바일 환경부터 Window와 macOS, Linux 등의 웹 브라우저 환경까지 다양한 생태계에서 사용할 수 있는 애플리케이션 및 웹 서비스를 개발하는 ‘AIIA Project’를 동아리의 대표 활동으로 두고 있습니다.\n\n
-또한 구성원들이 바쁜 프로젝트 활동에도 AI·소프트웨어 학부에서 배운 지식을 놓치지 않도록 자체적인 Major-Study Group을 운영하며, 우수한 학부 과정을 충실히 이행할 수 있도록 돕고 있습니다. 이를 통해 선후배 간의 네트워크를 형성하면서, 공동체 의식을 길러 동아리 활동에도 긍정적인 영향을 끼칠 수 있도록 운영하고 있습니다.\n\n
-이외에도 AIIA는 네카라쿠배 현직자 및 유망한 스타트업 대표님을 특별 초청하여 강연을 열거나 Flutter 및 인공지능 모델에 대한 최신 소식을 조사하여 발표하는 ‘Future-Tech Seminar’ 등 다양한 콘텐츠를 통해 동아리 개개인의 잠재력 향상과 AI·소프트웨어 학부 전체에 좋은 영향을 끼칠 수 있도록 노력하고 있습니다""";
+      """내용 추가 1""";
 
   static const String intro1 =
-      """AIIA는 가천대학교 글로벌 캠퍼스 교내 자율 동아리이자 교내 유일 IT 플랫폼 탐구·개발 동아리로,\nAI·소프트웨어 학부 인공지능 전공 재학생을 중심으로 2023년 1월 7일에 창설되었습니다.\nArtificial Intelligence In Actions의 약어인 AIIA는 동아리에서 직접 개발한 플랫폼에 적용할\n인공지능 모델 개발과 이를 통한 생활 속 편의를 제공하겠다는 의지와 포부를 담고 있습니다.""";
+      """내용 추가 2""";
   static const String intro2 =
       """AIIA는 Google에서 개발한 하이브리드 웹 프레임워크인 Flutter와 서버 개발을 위한 Spring,\n그리고 AI 딥러닝 모델 개발을 위한 라이브러리인 Pytorch를 주 도구로 채택하여 Android, iOS 같은\n모바일 환경부터 Windows, macOS, Linux 등의 웹 브라우저 환경까지 다양한 플랫폼 생태계에서\n이용 가능한 애플리케이션 및 웹 서비스를 개발하는 팀 프로젝트, ‘AIIA Project’를 동아리의\n대표 활동으로 운영하고 있습니다.""";
   static const String intro3 =

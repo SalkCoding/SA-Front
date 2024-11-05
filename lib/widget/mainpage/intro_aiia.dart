@@ -17,9 +17,9 @@ class IntroAIIA extends StatelessWidget {
         ),
         Container(
           child: Text(
-            "결국은, AIIA",
+            "개발자들의 공간 'Weaver'",
             style: TextStyle(
-              fontSize: ratio.width * 100,
+              fontSize: ratio.width * 70,
               fontFamily: 'Pretendard',
               fontWeight: FontWeight.w800,
               color: AirColor.subTitle1,

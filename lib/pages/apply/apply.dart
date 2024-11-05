@@ -5,6 +5,7 @@ import 'package:file_picker/_internal/file_picker_web.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:air_front/widget/common/footer.dart';
+import 'package:go_router/go_router.dart';
 
 //지원서 작성하는 페이지
 //Textfieldform, Dropdown, 파일 올리기 중요
@@ -19,7 +20,6 @@ class Apply extends StatefulWidget {
 class _ApplyState extends State<Apply> {
   final TextEditingController nameController = TextEditingController();
   final TextEditingController depController = TextEditingController();
-  final TextEditingController stnumController = TextEditingController();
   final TextEditingController phonController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
   final _applyKey = GlobalKey<FormState>();
@@ -105,7 +105,7 @@ class _ApplyState extends State<Apply> {
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 150, horizontal: 80),
                   child: Text(
-                    "입부 지원서",
+                    "지원서",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'Pretendard',
@@ -129,15 +129,10 @@ class _ApplyState extends State<Apply> {
                                 controller: nameController,
                                 validator: nameValidator),
                             CustomTextFieldColumn(
-                                kind: '학과',
-                                hint: '학과 입력',
+                                kind: '전공',
+                                hint: '전공 입력',
                                 controller: depController,
                                 validator: depValidator),
-                            CustomTextFieldColumn(
-                                kind: '학번',
-                                hint: '학번 입력',
-                                controller: stnumController,
-                                validator: stnumValidator),
                             CustomTextFieldColumn(
                                 kind: '전화번호',
                                 hint: '전화번호 입력',

@@ -5,6 +5,7 @@ import 'package:air_front/pages/loading_page.dart';
 import 'package:air_front/pages/mainpage/main_page.dart';
 import 'package:air_front/pages/member/member.dart';
 import 'package:air_front/pages/news/news.dart';
+import 'package:air_front/pages/apply/apply.dart';
 import 'package:air_front/pages/project/projects.dart';
 import 'package:air_front/provider/user/user_provider.dart';
 import 'package:flutter/cupertino.dart';
@@ -54,20 +55,7 @@ class _TopBarState extends ConsumerState<TopBar> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(
-                width: ratio.width * 45,
-              ),
-              GestureDetector(
-                onTap: () {
-                  context.goNamed(MainPage.routeName);
-                },
-                child: Image.asset(
-                  ImgPath.aiia_logo_blue,
-                  width: ratio.width * 200,
-                  height: ratio.height * 200,
-                ),
-              ),
-              SizedBox(
-                width: ratio.width * 40,
+                width: ratio.width * 85,
               ),
               topBarClickWidget(ishover: isHover),
               SizedBox(
@@ -87,7 +75,7 @@ class _TopBarState extends ConsumerState<TopBar> {
                 onTap: () async {
                   context.goNamed(News.routeName);
                 },
-                child: Text('News',
+                child: Text('Community',
                     style: topbarTextStyle(isMobile: isMobile(context))),
               ),
             ],
@@ -97,10 +85,13 @@ class _TopBarState extends ConsumerState<TopBar> {
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text(
-                  '입부지원',
-                  style: topbarTextStyle(isMobile: isMobile(context))
-                      .copyWith(color: Colors.grey),
+                InkWell(
+                  onTap: () {
+                    context.goNamed(Apply.routeName);
+                },
+                child: Text('프로필 추가',
+                    style:
+                    topbarTextStyle(isMobile: isMobile(context))),
                 ),
                 SizedBox(
                   width: ratio.width * 40,
@@ -199,20 +190,6 @@ class _TopBarState extends ConsumerState<TopBar> {
               )
             ],
           ),
-          ishover
-              ? Padding(
-                  padding: const EdgeInsets.only(top: 80),
-                  child: InkWell(
-                    onTap: () {
-                      context.goNamed('Unit');
-                    },
-                    child: Text(
-                      'Unit',
-                      style: topbarTextStyle(isMobile: isMobile(context)),
-                    ),
-                  ),
-                )
-              : SizedBox()
         ],
       ),
     );

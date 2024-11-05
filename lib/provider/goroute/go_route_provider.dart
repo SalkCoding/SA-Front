@@ -3,12 +3,12 @@ import 'package:air_front/pages/news/newsinfo.dart';
 import 'package:air_front/pages/signup/certification_complete.dart';
 import 'package:air_front/pages/signup/signup2.dart';
 import 'package:air_front/pages/test_page.dart';
+import 'package:air_front/pages/apply/apply.dart';
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:air_front/pages/loading_page.dart';
 import 'package:air_front/pages/mainpage/main_page.dart';
 import 'package:air_front/pages/project/projects.dart';
-import 'package:air_front/pages/member/unit.dart';
 import 'package:air_front/pages/signup/image_authentication.dart';
 import 'package:air_front/pages/signup/phone_authentication.dart';
 import 'package:air_front/pages/login/login.dart';
@@ -38,6 +38,11 @@ GoRouter goRoute(GoRouteRef ref){
       builder: (context, state) => Login(),
     ),
     GoRoute(
+      path: '/apply',
+      name: Apply.routeName,
+      builder: (context, state) => Apply(),
+    ),
+    GoRoute(
       path: '/signup1',
       name: SignUp1.routeName,
       builder: (context, state) => SignUp1(),
@@ -51,11 +56,6 @@ GoRouter goRoute(GoRouteRef ref){
       path: '/member',
       name: Member.routeName,
       builder: (context, state) => Member()
-    ),
-    GoRoute(
-      path: '/unit',
-      name: Unit.routeName,
-      builder: (context, state) => Unit(),
     ),
     GoRoute(
       path: '/project',
