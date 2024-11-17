@@ -42,8 +42,9 @@ FROM nginx:1.25.2-alpine
 # copy the info of the builded web app to nginx
 COPY --from=build-env /app/build/web /usr/share/nginx/html
 
-# copy nginx.conf file
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# copy nginx1.conf file
+COPY nginx1.conf /etc/nginx/conf.d/default1.conf
+COPY nginx2.conf /etc/nginx/conf.d/default2.conf
 
 # Expose and run nginx
 EXPOSE 80
