@@ -20,15 +20,6 @@ class IntroIntroduce extends StatelessWidget {
             image: ImgPath.main_google,
             reverse: true,
           ),
-          IntroRow(
-            text: Intro.intro3,
-            image: ImgPath.main_user,
-          ),
-          IntroRow(
-            text: Intro.intro4,
-            image: ImgPath.main_layer,
-            reverse: true,
-          ),
         ],
       ),
     );

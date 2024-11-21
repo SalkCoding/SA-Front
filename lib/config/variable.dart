@@ -27,14 +27,12 @@ late Size ratio;
 //http 관리 패키지
 //final dio = Dio();
 
-//이미지 파일 서버 주소
+// 이미지 파일 서버 주소
+// 우리가 새로 올리는 파일 서버 주소로 변경
 const String Image_URL = "https://files.aiia-gcu.com/";
 
-//OAuth 서버 주소
-const String OAuth_URL = "http://210.102.178.161:8081/";
-
-//AIR 서버 주소
-const String BASE_URL = "https://air.aiia-gcu.com/";
+//Weaver 서버 주소
+const String BASE_URL = "localhost";
 
 //로그인/회원가입 메타가천 서버 주소
 const String AUTH_URL = "https://meta.aiia-gcu.com/";
@@ -119,17 +117,10 @@ class Contract {
 }
 
 class Intro {
-  static const String intro =
-      """내용 추가 1""";
-
   static const String intro1 =
-      """내용 추가 2""";
+      """우리는 개발자들을 하나로 모우고자 합니다.""";
   static const String intro2 =
-      """AIIA는 Google에서 개발한 하이브리드 웹 프레임워크인 Flutter와 서버 개발을 위한 Spring,\n그리고 AI 딥러닝 모델 개발을 위한 라이브러리인 Pytorch를 주 도구로 채택하여 Android, iOS 같은\n모바일 환경부터 Windows, macOS, Linux 등의 웹 브라우저 환경까지 다양한 플랫폼 생태계에서\n이용 가능한 애플리케이션 및 웹 서비스를 개발하는 팀 프로젝트, ‘AIIA Project’를 동아리의\n대표 활동으로 운영하고 있습니다.""";
-  static const String intro3 =
-      """또한 동아리 구성원들이 바쁜 프로젝트 활동 속에서도 AI·소프트웨어학부 재학 중 학습한 지식을\n놓치지 않도록 자체적인 Major-Study Group을 운영하고 있으며, 이를 통해 우수한 학부 과정을\n충실히 이행할 수 있도록 돕고 있습니다. 이를 통해 선후배 간의 네트워크 형성은 물론,\n공동체 의식을 길러 동아리 활동에도 긍정적인 영향을 끼칠 수 있도록 운영하고 있습니다.""";
-  static const String intro4 =
-      """이외에도 네카라쿠배 (네이버·카카오·라인·쿠팡·배달의민족) 현직자 및 유망한 스타트업 대표님을\n특별 초청해 강연을 개최하거나 Flutter, Spring 및 인공지능 모델에 대한 최신 경향을 조사하여\n발표하는 ‘Future-Tech Seminar’, IT Show 및 AI Conference 방문, AIIA Day\nfor Membership Training 등 다양한 콘텐츠를 통해 동아리 개개인의 잠재력 향상과\nAI·소프트웨어 학부 전체에 좋은 영향을 끼칠 수 있도록 노력하고 있습니다.""";
+      """본인들의 프로젝트를 소개하고, 서로 Contact 해보세요.""";
 }
 
 //앱 텍스트 스타일
