@@ -22,12 +22,18 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           key: ${{ secrets.REMOTE_KEY }}
           script: |
+            echo "### Change directory to /SA-Front ###"
             cd /home/***/weaver/SA-Front
 
+            echo "### Pull origin main from Github ###"
             sudo git pull origin main
 
+            echo "### Build docker frontend image ###"
             sudo docker build -t salk1104/front:latest .
+
+            echo "### Push frontend image to Docker hub ###"
             sudo docker push salk1104/front
-            
+
+            echo "### Docker rolling deployment ###"
             sudo docker stack deploy -c ../docker-compose.yml weaver
             sudo docker service update --image salk1104/front:latest --force weaver_frontend
