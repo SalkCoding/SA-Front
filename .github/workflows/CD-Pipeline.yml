@@ -16,6 +16,7 @@ jobs:
     steps:
       - name: Deploy to Oracle Cloud VM
         uses: appleboy/ssh-action@master
+        timeout-minutes: 20
         with:
           host: ${{ secrets.REMOTE_HOST }}
           username: ${{ secrets.REMOTE_USER }}
@@ -23,7 +24,7 @@ jobs:
           script: |
             cd /home/***/weaver/SA-Front
 
-            git pull origin main
+            sudo git pull origin main
 
             sudo docker compose build frontend
             sudo docker compose up -d frontend

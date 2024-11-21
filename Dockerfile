@@ -32,7 +32,7 @@ WORKDIR $APP
 # Run build: 1 - clean, 2 - pub get, 3 - build web
 RUN flutter clean
 RUN flutter pub get
-RUN flutter build web
+RUN flutter build web --web-renderer html
 
 # once heare the app will be compiled and ready to deploy
 
@@ -41,6 +41,10 @@ FROM nginx:1.25.2-alpine
 
 # copy the info of the builded web app to nginx
 COPY --from=build-env /app/build/web /usr/share/nginx/html
+
+# copy nginx1.conf file
+COPY nginx1.conf /etc/nginx/conf.d/default1.conf
+COPY nginx2.conf /etc/nginx/conf.d/default2.conf
 
 # Expose and run nginx
 EXPOSE 80
