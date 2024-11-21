@@ -26,5 +26,8 @@ jobs:
 
             sudo git pull origin main
 
-            sudo docker compose build frontend
-            sudo docker compose up -d frontend
+            sudo docker build -t salk1104/front:latest .
+            sudo docker push salk1104/front
+            
+            sudo docker stack rm weaver
+            sudo docker stack deploy -c ../docker-compose.yml weaver
