@@ -29,5 +29,5 @@ jobs:
             sudo docker build -t salk1104/front:latest .
             sudo docker push salk1104/front
             
-            sudo docker stack rm weaver
             sudo docker stack deploy -c ../docker-compose.yml weaver
+            sudo docker service update --image salk1104/front:latest --force weaver_frontend
