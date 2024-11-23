@@ -121,11 +121,10 @@ class Contract {
 class Intro {
   static const String intro =
       """내용 추가 1""";
-
   static const String intro1 =
-      """내용 추가 2""";
+      """Weaver는 개발자들의 커뮤니티로써, 서로 간의 소통을 가장 중요하게 생각합니다.""";
   static const String intro2 =
-      """AIIA는 Google에서 개발한 하이브리드 웹 프레임워크인 Flutter와 서버 개발을 위한 Spring,\n그리고 AI 딥러닝 모델 개발을 위한 라이브러리인 Pytorch를 주 도구로 채택하여 Android, iOS 같은\n모바일 환경부터 Windows, macOS, Linux 등의 웹 브라우저 환경까지 다양한 플랫폼 생태계에서\n이용 가능한 애플리케이션 및 웹 서비스를 개발하는 팀 프로젝트, ‘AIIA Project’를 동아리의\n대표 활동으로 운영하고 있습니다.""";
+      """백엔드, 프론트, 서버 등 분야에 구애받지 않고 자신의 실력을 뽐내세요""";
   static const String intro3 =
       """또한 동아리 구성원들이 바쁜 프로젝트 활동 속에서도 AI·소프트웨어학부 재학 중 학습한 지식을\n놓치지 않도록 자체적인 Major-Study Group을 운영하고 있으며, 이를 통해 우수한 학부 과정을\n충실히 이행할 수 있도록 돕고 있습니다. 이를 통해 선후배 간의 네트워크 형성은 물론,\n공동체 의식을 길러 동아리 활동에도 긍정적인 영향을 끼칠 수 있도록 운영하고 있습니다.""";
   static const String intro4 =
