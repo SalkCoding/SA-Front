@@ -34,7 +34,7 @@ const String Image_URL = "https://files.aiia-gcu.com/";
 const String OAuth_URL = "http://210.102.178.161:8081/";
 
 //AIR 서버 주소
-const String BASE_URL = "https://air.aiia-gcu.com/";
+const String BASE_URL = "http://146.56.96.206:50002/";
 
 //로그인/회원가입 메타가천 서버 주소
 const String AUTH_URL = "https://meta.aiia-gcu.com/";
